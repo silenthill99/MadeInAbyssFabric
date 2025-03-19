@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "0": "minecraft:black_wool"
+  },
+  "pattern": [
+    "0",
+    "0",
+    "0"
+  ],
+  "result": {
+    "count": 1,
+    "id": "made_in_abyss_mod:test"
+  }
+}
