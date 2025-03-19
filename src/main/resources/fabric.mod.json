@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "made_in_abyss_mod",
+	"version": "${version}",
+	"name": "Made In Abyss Mod",
+	"description": "Mod sur le thème de Made in abyss. Tout éléments culturels présents appartiennent à leurs déteneurs respectifs.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/made_in_abyss_mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "fr.silenthill99.made_in_abyss_mod.Main"
+		],
+		"fabric-datagen": [
+			"fr.silenthill99.made_in_abyss_mod.MainDataGenerator"
+		],
+		"client": [
+			"fr.silenthill99.made_in_abyss_mod.MainClient"
+		]
+	},
+	"mixins": [
+		"made_in_abyss_mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

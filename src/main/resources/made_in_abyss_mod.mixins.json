@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "fr.silenthill99.made_in_abyss_mod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "MainMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
