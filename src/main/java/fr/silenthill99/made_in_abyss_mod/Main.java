@@ -1,6 +1,7 @@
 package fr.silenthill99.made_in_abyss_mod;
 
 import fr.silenthill99.made_in_abyss_mod.init.ModItems;
+import fr.silenthill99.made_in_abyss_mod.utils.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,6 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerItems();
+		ModSoundEvents.registerSoundEvents();
 	}
 }
