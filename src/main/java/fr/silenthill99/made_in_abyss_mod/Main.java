@@ -1,5 +1,6 @@
 package fr.silenthill99.made_in_abyss_mod;
 
+import fr.silenthill99.made_in_abyss_mod.init.ModBlocks;
 import fr.silenthill99.made_in_abyss_mod.init.ModItems;
 import fr.silenthill99.made_in_abyss_mod.utils.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
@@ -20,5 +21,6 @@ public class Main implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerItems();
 		ModSoundEvents.registerSoundEvents();
+		ModBlocks.registerBlock();
 	}
 }
