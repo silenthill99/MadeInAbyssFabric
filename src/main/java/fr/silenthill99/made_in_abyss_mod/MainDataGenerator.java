@@ -1,5 +1,6 @@
 package fr.silenthill99.made_in_abyss_mod;
 
+import fr.silenthill99.made_in_abyss_mod.data.LootTableGenerator;
 import fr.silenthill99.made_in_abyss_mod.data.ModRecipeGenerator;
 import fr.silenthill99.made_in_abyss_mod.data.ModelGenerator;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -11,5 +12,6 @@ public class MainDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModelGenerator::new);
 		pack.addProvider(ModRecipeGenerator::new);
+		pack.addProvider(LootTableGenerator::new);
 	}
 }

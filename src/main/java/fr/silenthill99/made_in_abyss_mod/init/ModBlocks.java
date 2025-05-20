@@ -1,9 +1,11 @@
 package fr.silenthill99.made_in_abyss_mod.init;
 
 import fr.silenthill99.made_in_abyss_mod.Main;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -30,6 +32,7 @@ public class ModBlocks {
 
     public static void registerBlock() {
         Main.LOGGER.info("Register mod blocks for : " + Main.MOD_ID);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> entries.add(RED_WOOL_BUTTON));
     }
 
 }
