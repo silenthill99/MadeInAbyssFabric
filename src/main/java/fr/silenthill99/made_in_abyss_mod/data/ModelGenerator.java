@@ -8,8 +8,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 
 public class ModelGenerator extends FabricModelProvider {
+
+    Item[] MUSIC_DISCS = {ModItems.SACRIFICED_FLOWER};
 
     public ModelGenerator(FabricDataOutput output) {
         super(output);
@@ -24,5 +28,8 @@ public class ModelGenerator extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.TEST, Models.GENERATED);
+        for (Item cd : MUSIC_DISCS) {
+            itemModelGenerator.register(cd, Items.MUSIC_DISC_MELLOHI, Models.GENERATED);
+        }
     }
 }
