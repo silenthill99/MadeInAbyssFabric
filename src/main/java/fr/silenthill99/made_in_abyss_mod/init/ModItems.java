@@ -31,6 +31,7 @@ public class ModItems {
     ));
 
     public static <T extends Item> Item createItem(Identifier id, T item) {
+
         return Registry.register(Registries.ITEM, id, item);
     }
 
